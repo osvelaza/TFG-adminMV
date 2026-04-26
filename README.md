@@ -18,8 +18,10 @@ Si devuelve la versión del programa, lo tiene instalado y puede continuar, en c
 </p>
 
 - **virsh**: Una interfaz de línea de comandos para KVM
+
 -----
-##Instalacion
+
+## Instalacion
 En la raiz del proyecto hay un pequeño script BASH que facilita la instalación de este programa ```habiendo cumplido los requisitos```
 Para ejecutarlo, hay que ejecutar el comando:
 ```bash
