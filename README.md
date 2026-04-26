@@ -12,4 +12,8 @@ Si devuelve la versión del programa, lo tiene instalado y puede continuar, en c
 - **virsh**: Una interfaz de línea de comandos para KVM
 -----
 ##Instalación
-aaa
+En la raiz del proyecto hay un pequeño script BASH que facilita la instalación de este programa ```habiendo cumplido los requisitos```
+Para ejecutarlo, hay que ejecutar el comando:
+```bash
+curl -sSL https://raw.githubusercontent.com/osvelaza/TFG-adminMV/refs/heads/main/install.sh | bash
+```
