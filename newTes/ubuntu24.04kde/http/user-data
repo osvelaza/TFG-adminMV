@@ -1,0 +1,20 @@
+#cloud-config
+autoinstall:
+  version: 1
+  locale: es_ES.UTF-8
+  keyboard:
+    layout: es
+  identity:
+    hostname: ubuntu-server
+    username: usuario
+    password: "contrasenaacambiar"
+  storage:
+    layout:
+      name: lvm
+  ssh:
+    install-server: true
+    allow-pw: true
+    ssh_pwauth: true
+  packages:
+    - htop
+    - kubuntu-desktop

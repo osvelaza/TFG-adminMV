@@ -1,0 +1,19 @@
+#cloud-config
+autoinstall:
+  version: 1
+  locale: es_ES.UTF-8
+  keyboard:
+    layout: es
+  identity:
+    hostname: ubuntuGNOME
+    username: paco
+    password: "$6$bvaovfv$FJcNfcR06qNEsApMa3tEEX5dEfg7cRwiGeCPl7OBbjJIY24BzrcNtp2Wvufz7.TzVhkmhj0KGcK5vEAAZYtl91"
+  storage:
+    layout:
+      name: lvm
+  ssh:
+    install-server: true
+    allow-pw: true
+    ssh_pwauth: true
+  packages:
+    - htop

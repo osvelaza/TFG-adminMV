@@ -1,0 +1,16 @@
+#cloud-config
+autoinstall:
+  version: 1
+  locale: es_ES.UTF-8
+  keyboard:
+    layout: es
+  identity:
+    hostname: ubuntu-server
+    username: oscar
+    password: "$6$cv3TsLHLEjkvwFc3$bVAm1Z1suUPJl7eH4NitFjJfCHmWFOOM.wY76hvx6R6EL8LZAoemLSrOZZHTD9o3waH/r3HtaaAOMQErWjGVZ0"
+  ssh:
+    install-server: true
+    allow-pw: true
+    ssh_pwauth: true
+  packages:
+    - htop
