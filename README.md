@@ -13,6 +13,10 @@ Si devuelve la versión del programa, lo tiene instalado y puede continuar, en c
 </p>
 
 - **QEMU/KVM**: Es el hypervisor elejido para el programa
+- <p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Gnu-bash-logo.svg/3840px-Gnu-bash-logo.svg.png" alt="Logo QEMU">
+</p>
+
 - **virsh**: Una interfaz de línea de comandos para KVM
 -----
 ##Instalacion
