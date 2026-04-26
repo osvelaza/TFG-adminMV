@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1236</width>
+    <height>553</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* ========== ESTILOS COMUNES PARA TODAS LAS VENTANAS ========== */
+
+/* Fondo general de la ventana principal */
+QMainWindow {
+    background-color: #f8f9fa;
+    color: #212529;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Barra de menú (QMenuBar) */
+QMenuBar {
+    background-color: #ffffff;
+    color: #495057;
+    border-bottom: 1px solid #e9ecef;
+    padding: 4px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+QMenuBar::item {
+    padding: 4px 12px;
+    background: transparent;
+}
+
+QMenuBar::item:selected {
+    background-color: #e9ecef;
+    color: #007bff;
+}
+
+QMenuBar::item:pressed {
+    background-color: #dee2e6;
+}
+
+/* Barra de estado (QStatusBar) */
+QStatusBar {
+    background-color: #ffffff;
+    color: #6c757d;
+    border-top: 1px solid #e9ecef;
+    padding: 6px;
+    font-size: 12px;
+}
+
+/* ========== ESTILOS ESPECÍFICOS PARA EL PRIMER FICHERO .ui ========== */
+
+/* QPlainTextEdit (Logger) */
+QPlainTextEdit#logger {
+    background-color: #ffffff;
+    color: #212529;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 8px;
+    font-family: 'Consolas', monospace;
+    font-size: 12px;
+    selection-background-color: #007bff;
+    selection-color: #ffffff;
+}
+
+/* QLabel (Etiquetas) */
+QLabel {
+    color: #495057;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+QLabel#estadoBuild {
+    color: #007bff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QLabel#label_7 {
+    color: #17a2b8;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* QPushButton (Botones) */
+QPushButton {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    min-width: 80px;
+}
+
+QPushButton:hover {
+    background-color: #0069d9;
+}
+
+QPushButton:pressed {
+    background-color: #0056b3;
+}
+
+/* QComboBox (Menús desplegables) */
+QComboBox {
+    background-color: #ffffff;
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 13px;
+    min-width: 100px;
+}
+
+QComboBox:focus {
+    border: 1px solid #007bff;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #ffffff;
+    color: #212529;
+    border: 1px solid #007bff;
+    selection-background-color: #007bff;
+selection-color: #ffffff;
+}
+
+/* QLineEdit (Campos de texto) */
+QLineEdit {
+    background-color: #ffffff;
+    color: #212529;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 13px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #007bff;
+}
+
+/* QSpinBox (Selectores numéricos) */
+QSpinBox {
+    background-color: #ffffff;
+    color: #212529;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 13px;
+}
+
+QSpinBox:focus {
+    border: 1px solid #007bff;
+}
+
+/* QCheckBox (Casillas de verificación) */
+QCheckBox {
+    spacing: 5px;
+    color: #495057;
+    font-size: 13px;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+}
+
+QCheckBox::indicator:unchecked {
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+}
+
+/* QFrame (Marco de la cola de máquinas virtuales) */
+QFrame#frame {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+/* Layout de la cola de máquinas virtuales */
+QWidget#verticalLayoutWidget {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 5px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPlainTextEdit" name="logger">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>360</y>
+      <width>801</width>
+      <height>181</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="estadoBuild">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>58</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Packer">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>290</y>
+      <width>112</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ejecutar</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>230</y>
+      <width>561</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QComboBox" name="comboboxDistro">
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ubuntu</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>fedora</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>debian</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBoxVersion"/>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBoxExtra">
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Odoo</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Docker</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>70</y>
+      <width>351</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Usuario       </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="usuario"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Contraseña</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="contrasena"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>80</y>
+      <width>193</width>
+      <height>122</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Espacio disco</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="almacenamiento"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Nucleos CPU</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="CPU"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>RAM (mb)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="memoria"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>20</y>
+      <width>191</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_8">
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Nombre</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="nombre"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="cola" native="true">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>10</y>
+      <width>211</width>
+      <height>521</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>10</y>
+      <width>361</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>10</y>
+       <width>271</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cola máquinas virtuales</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>341</width>
+       <height>471</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="colaMV"/>
+    </widget>
+   </widget>
+   <widget class="QCheckBox" name="boolCrear">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>10</y>
+      <width>151</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Crear VM al terminar</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

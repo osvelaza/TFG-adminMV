@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>867</width>
+    <height>576</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* ========== ESTILOS COMUNES PARA TODAS LAS VENTANAS ========== */
+
+/* Fondo general de la ventana principal */
+QMainWindow {
+    background-color: #f8f9fa;
+    color: #212529;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Barra de menú (QMenuBar) */
+QMenuBar {
+    background-color: #ffffff;
+    color: #495057;
+    border-bottom: 1px solid #e9ecef;
+    padding: 4px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+QMenuBar::item {
+    padding: 4px 12px;
+    background: transparent;
+}
+
+QMenuBar::item:selected {
+    background-color: #e9ecef;
+    color: #007bff;
+}
+
+QMenuBar::item:pressed {
+    background-color: #dee2e6;
+}
+
+/* Barra de estado (QStatusBar) */
+QStatusBar {
+    background-color: #ffffff;
+    color: #6c757d;
+    border-top: 1px solid #e9ecef;
+    padding: 6px;
+    font-size: 12px;
+}
+
+/* ========== ESTILOS ESPECÍFICOS PARA EL PRIMER FICHERO .ui ========== */
+
+/* QPlainTextEdit (Logger) */
+QPlainTextEdit#logger {
+    background-color: #ffffff;
+    color: #212529;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 8px;
+    font-family: 'Consolas', monospace;
+    font-size: 12px;
+    selection-background-color: #007bff;
+    selection-color: #ffffff;
+}
+
+/* QLabel (Etiquetas) */
+QLabel {
+    color: #495057;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+QLabel#estadoBuild {
+    color: #007bff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QLabel#label_7 {
+    color: #17a2b8;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* QPushButton (Botones) */
+QPushButton {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    min-width: 80px;
+}
+
+QPushButton:hover {
+    background-color: #0069d9;
+}
+
+QPushButton:pressed {
+    background-color: #0056b3;
+}
+
+/* QComboBox (Menús desplegables) */
+QComboBox {
+    background-color: #ffffff;
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 13px;
+    min-width: 100px;
+}
+
+QComboBox:focus {
+    border: 1px solid #007bff;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #ffffff;
+    color: #212529;
+    border: 1px solid #007bff;
+    selection-background-color: #007bff;
+selection-color: #ffffff;
+}
+
+/* QLineEdit (Campos de texto) */
+QLineEdit {
+    background-color: #ffffff;
+    color: #212529;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 13px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #007bff;
+}
+
+/* QSpinBox (Selectores numéricos) */
+QSpinBox {
+    background-color: #ffffff;
+    color: #212529;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 13px;
+}
+
+QSpinBox:focus {
+    border: 1px solid #007bff;
+}
+
+/* QCheckBox (Casillas de verificación) */
+QCheckBox {
+    spacing: 5px;
+    color: #495057;
+    font-size: 13px;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+}
+
+QCheckBox::indicator:unchecked {
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+}
+
+/* QFrame (Marco de la cola de máquinas virtuales) */
+QFrame#frame {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+/* Layout de la cola de máquinas virtuales */
+QWidget#verticalLayoutWidget {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 5px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>867</width>
+     <height>34</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
