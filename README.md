@@ -9,7 +9,7 @@ python -V
 Si devuelve la versión del programa, lo tiene instalado y puede continuar, en caso negativo, debe instalarlo con el gestor de paquetes de su distribución.
 - **BASH**: Interprete de línea de comandos
 <p align="center">
-  <img src="[https://raw.githubusercontent.com/pi-hole/graphics/refs/heads/master/Vortex/vortex_with_text.svg](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/960px-Bash_Logo_Colored.svg.png)" alt="Logo BASH" width="200" height="200">
+  <img src="[[https://raw.githubusercontent.com/pi-hole/graphics/refs/heads/master/Vortex/vortex_with_text.svg](https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Gnu-bash-logo.svg/3840px-Gnu-bash-logo.svg.png)](Logo BASH)" alt="Logo BASH" width="200" height="200">
   <br>
   <strong>Network-wide ad blocking via your own Linux hardware</strong>
 </p>
