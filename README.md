@@ -10,6 +10,6 @@ Si devuelve la versión del programa, lo tiene instalado y puede continuar, en c
 - **BASH**: Interprete de línea de comandos
 - **QEMU/KVM**: Es el hypervisor elejido para el programa
 - **virsh**: Una interfaz de línea de comandos para KVM
-
+-----
 ##Instalación
 aaa
