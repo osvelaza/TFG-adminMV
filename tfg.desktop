@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Administrador MV
+Exec=cd /home/oscar/DAM/TFG/GUI/&&/usr/bin/python main.py
+Comment=Proyecto Oscar
+Categories=Utility;
+Terminal=false
