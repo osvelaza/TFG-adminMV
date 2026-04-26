@@ -9,7 +9,7 @@ python -V
 Si devuelve la versión del programa, lo tiene instalado y puede continuar, en caso negativo, debe instalarlo con el gestor de paquetes de su distribución.
 - **BASH**: Interprete de línea de comandos
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Gnu-bash-logo.svg/3840px-Gnu-bash-logo.svg.png" alt="Logo BASH" width="200" height="200">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Gnu-bash-logo.svg/3840px-Gnu-bash-logo.svg.png" alt="Logo BASH" width="300" height="200">
 </p>
 
 - **QEMU/KVM**: Es el hypervisor elejido para el programa
